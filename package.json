@@ -1,0 +1,18 @@
+{
+  "name": "webpack-babel-assignment",
+  "version": "1.0.0",
+  "description": "Webpack Babel Assignment",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "file" : "babel ./src/index.js --out-file ./dist/main.js",
+    "dir" : "babel src --out-dir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3"
+  }
+}
