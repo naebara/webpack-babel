@@ -4,15 +4,26 @@
   "description": "Webpack Babel Assignment",
   "scripts": {
     "build": "babel src --out-dir lib",
-    "file" : "babel ./src/index.js --out-file ./dist/main.js",
-    "dir" : "babel src --out-dir dist"
+    "file": "babel ./src/index.js --out-file ./dist/main.js",
+    "dir": "babel src --out-dir dist",
+    "start": "npm run file & webpack serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/polyfill": "^7.12.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
-    "@babel/core": "^7.12.3"
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.2.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }
